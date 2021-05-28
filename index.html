@@ -1,11 +1,12 @@
 <html lang="en">
     <head>
         <meta charset="UTF-F">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LaraShop | Shopping in your hand</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
         <div class="banner">
@@ -15,13 +16,14 @@
                         <img src="assets/images/logo.png" alt="laraShop">
                     </div>
                     <nav>
-                        <ul>
+                        <ul id="menuItems">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Products</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
+                    <i onclick="toggleMenu()" class="fa fa-bars"></i>
                 </div>
             </div>
         
@@ -402,5 +404,20 @@
             </div>
 
         </div>
+
+        <script>
+            var menuItems = document.getElementById("menuItems");
+
+            menuItems.style.maxHeight = "0px";
+
+            function toggleMenu() {
+                if(menuItems.style.maxHeight == "0px")  
+                {
+                    menuItems.style.maxHeight = "200px";
+                } else {
+                    menuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
     </body>
 </html>
