@@ -360,3 +360,66 @@ h4 {
         flex-basis: 100%;
     }
 }
+
+
+.bannstudy {
+    height: 550px;
+    background-color: rgb(42, 41, 41);
+    position: relative;
+}
+
+.bannstudy>* {
+    position: absolute;
+}
+
+.topimg {
+    top: 0;
+    left: 0;
+    animation-name: animateImg;
+    animation-duration: 1s;
+}
+
+.bottomimg {
+    bottom: 150px;
+    right: 150px;
+    animation-name: animateImg;
+    animation-duration: 1s;
+}
+
+.decor {
+    top: 150px;
+    right: 200px;
+    font-size: 50px;
+    font-weight: 800;
+    color:rgb(199, 134, 15)
+}
+
+.essentials {
+    top: 215px;
+    right: 160px;
+    font-size: 25px;
+    font-weight: 100;
+    color:rgb(202, 202, 202);
+    font-style: italic;
+}
+
+.bannstudy p {
+    width: 250px;
+    bottom: 150px;
+    left: 300px;
+    font-size: 14px;
+    font-weight: 100;
+    color:rgb(202, 202, 202);
+    font-style: italic;
+}
+
+@keyframes animateImg {
+    from {
+        opacity: 0;
+        transform: rotate(-30deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
